@@ -67,7 +67,7 @@ window.I18N = {
   "contact.formMessage": { en:"Message / Requirement *", zh:"留言 / 需求 *" },
   "contact.formSubmit": { en:"Send Inquiry", zh:"发送询盘" },
   "contact.formThanks": { en:"Thank you, your inquiry is on its way.", zh:"感谢您的询盘，我们已收到。" },
-  "footer.desc": { en:"Biodegradable food packaging manufacturer — paper cups, bowls, boxes, straws, plates and bags.", zh:"可降解食品包装制造商——纸杯、纸碗、餐盒、吸管、纸盘与纸袋。" },
+  "footer.desc": { en:"Sustainable food packaging supplier & exporter — paper cups, bowls, boxes, straws, plates and bags.", zh:"可持续食品包装供应与出口商——纸杯、纸碗、餐盒、吸管、纸盘与纸袋。" },
   "footer.quickLinks": { en:"Quick Links", zh:"快速链接" },
   "footer.products": { en:"Products", zh:"产品" },
   "footer.contact": { en:"Contact", zh:"联系" },
