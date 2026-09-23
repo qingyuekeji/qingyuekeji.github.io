@@ -49,3 +49,4 @@
   .wa-float span{display:none}
   .wa-float{padding:14px}
 }
+.insight-img{width:100%;max-width:520px;border-radius:12px;margin-bottom:16px;border:1px solid var(--bd)}
