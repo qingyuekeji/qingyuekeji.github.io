@@ -1,0 +1,51 @@
+/* ==== FAQ accordion ==== */
+.faq-wrap{max-width:860px;margin:34px auto 0}
+.faq{border:1px solid var(--bd);border-radius:14px;background:#fff;margin-bottom:12px;overflow:hidden;transition:.18s}
+.faq[open]{box-shadow:var(--shadow);border-color:#cfe6da}
+.faq summary{cursor:pointer;list-style:none;padding:18px 22px;font-weight:700;font-size:16px;display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--green);font-weight:800;font-size:22px;line-height:1;flex-shrink:0}
+.faq[open] summary::after{content:"–"}
+.faq .a{padding:0 22px 20px;color:var(--muted);font-size:15px}
+.faq .a ul{margin:8px 0 0 18px}
+.faq .a li{margin:4px 0}
+
+/* ==== Steps / process ==== */
+.steps{counter-reset:st;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+.step{position:relative;background:#fff;border:1px solid var(--bd);border-radius:16px;padding:26px 22px 22px;box-shadow:var(--shadow)}
+.step::before{counter-increment:st;content:counter(st);position:absolute;top:-16px;left:22px;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px}
+.step h3{font-size:16.5px;font-weight:800;margin:8px 0 6px}
+.step p{color:var(--muted);font-size:14px}
+.step .tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.step .tags span{background:var(--green-lt);color:var(--green);font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px}
+
+/* ==== Certifications grid ==== */
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.cert-card{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.cert-card b{display:block;color:var(--green);font-size:17px;font-weight:800;margin-bottom:6px}
+.cert-card p{color:var(--muted);font-size:14px}
+.note{background:var(--green-xlt);border:1px solid var(--bd);border-left:4px solid var(--green2);border-radius:10px;padding:14px 18px;color:#33513f;font-size:14px;margin-top:26px}
+
+/* ==== Download cards ==== */
+.dl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.dl-card{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:24px;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.dl-card .ic{width:46px;height:46px;border-radius:12px;background:var(--green-lt);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px}
+.dl-card h3{font-size:16.5px;font-weight:800;margin-bottom:6px}
+.dl-card p{color:var(--muted);font-size:14px;margin-bottom:16px}
+.dl-card .btn{margin-top:auto;justify-content:center}
+
+/* ==== Insights list ==== */
+.insight{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:26px;margin-bottom:18px;box-shadow:var(--shadow)}
+.insight h3{font-size:19px;font-weight:800;margin-bottom:6px}
+.insight .meta{color:var(--green2);font-weight:700;font-size:13px;margin-bottom:12px}
+.insight .body{color:var(--muted);font-size:15px;white-space:pre-line}
+
+/* ==== WhatsApp float ==== */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:120;display:flex;align-items:center;gap:9px;background:#25D366;color:#fff;font-weight:700;font-size:14px;padding:12px 18px;border-radius:999px;box-shadow:0 10px 26px rgba(37,211,102,.38);transition:.18s}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(37,211,102,.5)}
+.wa-float svg{width:20px;height:20px;fill:#fff}
+@media(max-width:900px){
+  .steps,.cert-grid,.dl-grid{grid-template-columns:1fr}
+  .wa-float span{display:none}
+  .wa-float{padding:14px}
+}
