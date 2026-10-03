@@ -50,3 +50,79 @@
   .wa-float{padding:14px}
 }
 .insight-img{width:100%;max-width:520px;border-radius:12px;margin-bottom:16px;border:1px solid var(--bd)}
+
+/* ==== Sushi tube product page ==== */
+.breadcrumb{font-size:13.5px;color:var(--muted);padding:22px 0}
+.breadcrumb a:hover{color:var(--green)}
+.actions{display:flex;flex-direction:column;gap:12px;margin-top:22px;align-items:flex-start}
+
+.phero{background:linear-gradient(160deg,#f2faf5 0%,#e4f3ea 60%,#d9f0e3 100%)}
+.phero .inner{display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center;padding:34px 0 54px}
+.phero .kicker{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--bd);color:var(--green);font-weight:700;font-size:13px;border-radius:999px;padding:6px 14px;margin-bottom:16px}
+.phero h1{font-size:42px;line-height:1.14;font-weight:800;letter-spacing:-.5px;margin-bottom:16px}
+.phero p.lead{font-size:17px;color:var(--muted);max-width:540px;margin-bottom:24px}
+.phero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.phero .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.phero .badges span{background:#fff;border:1px solid var(--bd);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600;color:var(--muted)}
+.phero .shot img{border-radius:22px;box-shadow:var(--shadow);width:100%;object-fit:cover}
+
+.qfacts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:-30px 0 0;position:relative;z-index:2}
+.qf{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:20px 18px;box-shadow:var(--shadow);text-align:center}
+.qf b{display:block;font-size:24px;color:var(--green);line-height:1.1;font-weight:800}
+.qf span{display:block;color:var(--muted);font-size:13px;margin-top:6px}
+
+.specwrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:start;margin-top:26px}
+.shotcol{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:sticky;top:88px}
+.shotcol img{width:100%;height:470px;border-radius:16px;border:1px solid var(--bd);background:linear-gradient(180deg,#fbfdfc,#eef7f2);box-shadow:var(--shadow);object-fit:contain;padding:8px}
+.spectable{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--bd);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.spectable th,.spectable td{padding:13px 16px;font-size:14.5px;text-align:left;border-bottom:1px solid var(--bd);vertical-align:top}
+.spectable th{width:34%;background:var(--green-xlt);color:#33513f;font-weight:700;white-space:nowrap}
+.spectable td{color:var(--muted)}
+.spectable tr:last-child th,.spectable tr:last-child td{border-bottom:none}
+
+.occgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:30px}
+.occgrid figure{margin:0;position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--bd);background:#fff}
+.occgrid figure img{width:100%;height:300px;object-fit:cover;display:block}
+.occgrid figcaption{position:absolute;left:0;right:0;bottom:0;padding:38px 20px 16px;background:linear-gradient(to top,rgba(8,26,17,.86),rgba(8,26,17,.35) 55%,rgba(8,26,17,0));color:#fff}
+.occgrid figcaption b{display:block;font-size:17px;font-weight:800}
+.occgrid figcaption span{display:block;font-size:13.5px;opacity:.9}
+
+.matbanner{margin-top:28px}
+.matbanner img{width:100%;height:360px;object-fit:cover;border-radius:18px;box-shadow:var(--shadow)}
+.matwrap{margin-top:22px}
+.cert-grid.two{grid-template-columns:1fr 1fr;margin-top:0;gap:16px}
+.cert-grid.four{grid-template-columns:repeat(4,1fr);margin-top:0;gap:16px}
+.cert-grid.two .cert-card,.cert-grid.four .cert-card{padding:18px}
+
+@media(max-width:900px){
+  .phero .inner,.specwrap{grid-template-columns:1fr}
+  .matbanner img{height:240px}
+  .cert-grid.four{grid-template-columns:1fr 1fr}
+  .shotcol{position:static;grid-template-columns:1fr 1fr}
+  .qfacts{grid-template-columns:1fr 1fr;margin-top:22px}
+  .occgrid{grid-template-columns:1fr}
+  .phero h1{font-size:32px}
+  .cert-grid.two,.cert-grid.four{grid-template-columns:1fr}
+  .matbanner img{height:190px}
+}
+@media(max-width:560px){
+  .qfacts{grid-template-columns:1fr}
+  .shotcol{grid-template-columns:1fr}
+  .spectable th{white-space:normal;width:40%}
+}
+
+/* ==== New-product banner on the products index ==== */
+.newband{display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;background:linear-gradient(135deg,#f2faf5,#e2f2e9);border:1px solid var(--bd);border-radius:20px;padding:24px 28px;box-shadow:var(--shadow);transition:.2s}
+.newband:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(31,122,77,.14)}
+.newband img{width:96px;height:150px;object-fit:contain;border-radius:12px;background:#fff;border:1px solid var(--bd);padding:6px}
+.newband .tag{display:inline-block;background:var(--green);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:3px 12px;margin-bottom:8px;letter-spacing:.3px}
+.newband h3{font-size:22px;font-weight:800;margin-bottom:6px}
+.newband p{color:var(--muted);font-size:14.5px;max-width:640px}
+.newband .go{color:var(--green);font-weight:800;white-space:nowrap}
+@media(max-width:760px){
+  .newband{grid-template-columns:1fr;gap:16px;padding:22px}
+  .newband img{width:100%;height:190px}
+  .newband .go{justify-self:start}
+}
+
+
