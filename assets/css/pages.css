@@ -54,7 +54,7 @@
 /* ==== Sushi tube product page ==== */
 .breadcrumb{font-size:13.5px;color:var(--muted);padding:22px 0}
 .breadcrumb a:hover{color:var(--green)}
-.actions{display:flex;flex-direction:column;gap:12px;margin-top:22px;align-items:flex-start}
+.specside .actions{display:flex;flex-direction:column;gap:12px;margin-top:22px;align-items:flex-start}
 
 .phero{background:linear-gradient(160deg,#f2faf5 0%,#e4f3ea 60%,#d9f0e3 100%)}
 .phero .inner{display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center;padding:34px 0 54px}
